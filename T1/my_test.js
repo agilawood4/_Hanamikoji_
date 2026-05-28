@@ -1,7 +1,4 @@
 // T1 自动化测试：hanamikoji_judge
-// 用法：在 /T1 目录下执行  node test.js
-//
-// ⚠️ 只允许修改下面这一行的路径，其余代码不要改动
 import { hanamikoji_judge } from "./t1-as/build/release.js";
 
 // ─── 测试框架 ────────────────────────────────────────────────

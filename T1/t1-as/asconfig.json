@@ -1,0 +1,22 @@
+{
+  "targets": {
+    "release": {
+      "outFile": "build/release.wasm",
+      "textFile": "build/release.wat",
+      "sourceMap": true,
+      "optimize": true,
+      "shrink": true,
+      "exportRuntime": true
+    }
+  },
+  "options": {
+    "runtime": "stub",
+    "exportTable": false,
+    "importTable": false,
+    "noAssert": false,
+    "moveToWasm": true
+  },
+  "assembly": {
+    "tsconfig": "./assembly/tsconfig.json"
+  }
+}

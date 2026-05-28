@@ -1,11 +1,4 @@
-// 花见小路 T3 优化版策略 - 全 bug 修复版
-// 修复列表：
-//   Fix1: SCORES 改回 i32[]（StaticArray 边界检查过严会崩溃）
-//   Fix2: addLetters / bodyInCards 加字符范围检查，防止非 A-G 字符越界
-//   Fix3: markUsedActions 过滤空 token 和响应 token，防止 unchecked 越界
-//   Fix4: inferSeat 过滤空 token，防止 ownConsumed 计算错误
-//   Fix5: fallbackAction 末尾兜底不再返回已用行动
-// 原有博弈策略（evaluatePosition、minimax模拟）完全保留不变
+// 花见小路 T3 优化版策略
 
 // Fix1: 改回 i32[]，避免 StaticArray 严格边界检查崩溃
 const SCORES: i32[] = [2, 2, 2, 3, 3, 4, 5];

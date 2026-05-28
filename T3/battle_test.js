@@ -85,8 +85,11 @@ function makeAction(exports) {
   };
 }
 
-const v1Exports = loadWasm("t3-as/build/release.wasm");
-const v2Exports = loadWasm("t3-as-v2/build/release.wasm");
+const v1WasmPath = process.env.HM_BATTLE_P1_WASM || "t3-as-v2/build/release.wasm";
+const v2WasmPath = process.env.HM_BATTLE_P2_WASM || "t3-as-v2/build/release.wasm";
+
+const v1Exports = loadWasm(v1WasmPath);
+const v2Exports = loadWasm(v2WasmPath);
 
 const v1Action = makeAction(v1Exports);
 const v2Action = makeAction(v2Exports);
