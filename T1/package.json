@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "asbuild": "cd t1-as && asc",
+    "asbuild": "cd t1-as && asc assembly/index.ts --target release",
     "submit-test": "node test.js"
   },
   "devDependencies": {
